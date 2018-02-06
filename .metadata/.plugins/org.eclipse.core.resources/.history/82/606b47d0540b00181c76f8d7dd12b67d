@@ -16,7 +16,7 @@ public class Hello {
 	
 	public static void frame(){
 		JFrame frame = new JFrame("FrameDemo");
-		 JLabel textLabel = new JLabel("De wae of the deval",SwingConstants.CENTER); textLabel.setPreferredSize(new Dimension(300, 100)); 
+		 JLabel textLabel = new JLabel("I'm a label in the window",SwingConstants.CENTER); textLabel.setPreferredSize(new Dimension(300, 100)); 
 		 frame.getContentPane().add(textLabel, BorderLayout.CENTER);
 		 frame.setLocationRelativeTo(null); 
 		 frame.pack(); 

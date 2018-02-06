@@ -9,20 +9,10 @@
  */
 import java.util.Scanner;
 
-import java.awt.*;
-import javax.swing.*;  
+import javax.swing.JFrame;  
 
 public class Hello {
 	
-	public static void frame(){
-		JFrame frame = new JFrame("FrameDemo");
-		 JLabel textLabel = new JLabel("De wae of the deval",SwingConstants.CENTER); textLabel.setPreferredSize(new Dimension(300, 100)); 
-		 frame.getContentPane().add(textLabel, BorderLayout.CENTER);
-		 frame.setLocationRelativeTo(null); 
-		 frame.pack(); 
-		 frame.setVisible(true);
-		
-	}
 	public static void main(String[] args) {
 		System.out.println("Enter your name");
 		Scanner sc=new Scanner(System.in);  
@@ -31,7 +21,6 @@ public class Hello {
 		System.out.println("where do you live");
 		String home = sc.next();
 		if("hell".equals (home)){
-			frame();
 			System.out.println("I can show you de wae of the devaal" );
 		}
 		else{
@@ -40,6 +29,12 @@ public class Hello {
 		}
 sc.close();
 	}
-	
+	public void frame(){
+		JFrame frame = new JFrame("FrameDemo");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.pack();
+		frame.setVisible(true);
+		
+	}
 		
 	}
